@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1538543122 source:c:\users\joseph\documents\begc4d\testsectbstringsq4\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+
