@@ -21,18 +21,22 @@ int main()
 int findSubstring(char *str, char *substr)
 {
 /* Write your code here */
-    int size, size2 , result = 0,i,j;
-    size = strlen(substr); size2 = strlen(str);
-    for (i = 0;i < size;i++){
-        for (j = 0;j < size2;j++){
-            if(str[j] == substr[i]){bfbfbf
-                if((substr[i+1] != str[j+1]) && ((i+1)!=size)) {
-                    return 0;
-                }
-                result = 1;
+    int i,k;
+    k=0;
+    i=0;
+    while(str[i]!='\0')
+    {
+        while(str[i+k]==substr[k])
+        {
+            if(substr[k+1]=='\0')
+            {
+                return 1;
                 break;
             }
+            k++;
         }
+        i++;
+        k=0;
     }
-    return result;
+    return 0;
 }
