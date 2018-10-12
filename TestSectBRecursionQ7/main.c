@@ -8,10 +8,12 @@ int main() {
     return 0;
 }
 int rStrLen(char *s) {
-   static int c = 0;
-   while (s[c] != '\0') {
-      c++;
-      rStrLen(s);
-   }
-   return c;
+    int c=0;
+    if(s[c]=='\0')
+        return 0;
+    if(s[c]!='\0')
+    {
+        c++;
+        return rStrLen(++s)+1;
+    }
 }
