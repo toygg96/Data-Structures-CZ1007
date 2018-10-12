@@ -16,7 +16,7 @@ int rAllOddDigits1 (int num)
         return 1;
     if(num%2==0)
     {
-        if(num>10)
+        if(num>9)
             rAllOddDigits1(num/10);
         return 0;
     }
